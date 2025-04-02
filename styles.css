@@ -54,7 +54,7 @@ body {
 }
 
 section {
-    height: 120vh;
+    height: 100vh;
 }
 
 /*Now styling the contact section*/
@@ -142,7 +142,7 @@ h2 {
 
 .title {
     display: block;
-    color: #008489;
+    color: rgb(52, 25, 25);
     font-weight: bold;
     font-size: 20px;
 }
@@ -229,8 +229,8 @@ h2 {
     background: rgba(0, 249, 203, 0.2);
     transition: all 0.5s ease-in-out;
     box-shadow: rgba(100, 100, 111, 0.2) -10px 10px 20px 0px;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
 }
 
 .circle1 {
@@ -316,12 +316,13 @@ h2 {
 
 .glass{
   border-top-right-radius: 100%;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.349) 0%, rgba(255, 255, 255, 0.815) 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.76) 0%, rgba(250, 246, 246, 0.815) 100%);
   transform: translate3d(0px, 0px, 25px);
   transition: all 0.5s ease-in-out;
 }
 
 /* Now styling the Footer section */
+
 .footer-content {
     background-color: #008489;
     padding: 20px;
@@ -388,7 +389,7 @@ h2 {
 /* Responsive Styles */
 @media screen and (max-width: 1024px) {
     #navigation {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     
@@ -425,7 +426,7 @@ h2 {
     }
     
     .social-links {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     
@@ -448,7 +449,7 @@ h2 {
     }
     
     #buttons {
-        flex-direction: column;
+        flex-direction: row;
     }
     
     .nav {
