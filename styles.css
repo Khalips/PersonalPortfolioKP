@@ -361,6 +361,10 @@ h2 {
     color: #f1c40f;
 }
 
+footer div p {
+    font-size: x-small;
+}
+
 .footer-nav ul {
     list-style: none;
     padding: 0;
@@ -458,7 +462,7 @@ h2 {
     
     .footer-nav ul {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         padding: 0;
     }
