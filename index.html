@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Portfolio - Kaliphile Papiyana</title>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="A personal portfolio for Kaliphile Papiyana.">
+        <meta name="keywords" content="personal, portfolio, Kaliphile, Papiyana">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header id="home">
+            <div id="navigation">
+                <div>
+                    <button onclick="scrollToSection('home')" id="home_btn">Kaliphile.</button>
+                </div>
+                <div id="buttons">
+                    <button onclick="scrollAndActivate('about', this)" class="nav">About</button>
+                    <button onclick="scrollAndActivate('education', this)" class="nav">Education</button>
+                    <button onclick="scrollAndActivate('projects', this)" class="nav">Projects</button>
+                    <button onclick="scrollAndActivate('contact', this)" class="nav">Contact</button>
+                </div>
+            </div>           
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+        </section>
+        
+        <section id="education">
+            <h2>Education</h2>
+        </section>
+        
+        <section id="projects">
+            <h2>My Projects</h2>
+        </section>
+        
+        <section id="contact">
+            <!-- Below is the code for the form to contact me-->
+            <div class="container">
+                <h2>Let's Talk</h2>
+                <p id="info">If you wish to get more information about me, feel free to send a message</p>
+
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                    <br>
+                        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <br>
+                        
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="4" required></textarea>
+                    <br>
+                        
+                    <button type="submit" id="submitButton">Send</button>
+                </form>
+                <p id="status"></p>
+            </div>
+
+            <!-- The below code is for my contact details -->
+            <div id="contact_details">
+                <div class="parent">
+                    <div class="card">
+                        <div class="logo">
+                            <span class="circle circle1"></span>
+                            <span class="circle circle2"></span>
+                            <span class="circle circle3"></span>
+                            <span class="circle circle4"></span>
+                        </div>
+                        <div class="glass"></div>
+                        <div class="content">
+                            <span class="title">
+                                Contact Kaliphile Papiyana
+                            </span>
+                            <span class="text">
+                                You can get ahold of me on Facebook, WhatsApp, or LinkedIn
+                            </span>
+                        </div>
+                        <div class="bottom">
+                            <div class="social-buttons-container">
+
+                                <button class="social-button social-button1">
+                                    <a href="https://www.facebook.com/profile.php?id=61558758694403" target="_blank">
+                                        <i class="fab fa-facebook-f"></i> <!-- Facebook -->
+                                    </a>
+                                </button>
+
+                                <button class="social-button social-button2">
+                                    <a href="https://wa.me/+27843528401" target="_blank">
+                                        <i class="fab fa-whatsapp"></i> <!-- WhatsApp -->
+                                    </a>
+                                </button>
+
+                                <button class="social-button social-button3">
+                                    <a href="https://www.linkedin.com/in/kaliphile-papiyana-b84985264/" target="_blank">
+                                        <i class="fab fa-linkedin"></i> <!-- LinkedIn -->
+                                    </a>
+                                </button>
+                            </div>
+
+                            <div class="view-more">
+                                <button class="view-more-button">
+                                    View more
+                                </button>
+                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="footer-content">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <p>Email: khaliphilepapiyana7@gmail.com</p>
+                    <p>Phone: +27 84 352 8401</p>
+                </div>
+        
+                <!-- Social Media Links -->
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/kaliphile-papiyana-b84985264/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Khalips" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61558758694403" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@khaliphilepapiyana9225" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://wa.me/+27843528401" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+        
+                <!-- Footer Navigation Links -->
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Copyright -->
+                <p>&copy; 2025 Kaliphile Papiyana. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </body>
+
+    <script src="script.js"></script>
+</html>
