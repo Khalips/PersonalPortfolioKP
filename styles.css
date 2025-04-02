@@ -391,6 +391,8 @@ footer div p {
 }
 
 /* Responsive Styles */
+
+/*For Laptop*/
 @media screen and (max-width: 1024px) {
     #navigation {
         flex-direction: row;
@@ -414,6 +416,7 @@ footer div p {
     }
 }
 
+/*For Tablet*/
 @media screen and (max-width: 768px) {
     body {
         padding-top: 100px;
@@ -447,11 +450,16 @@ footer div p {
     }
 }
 
+/*For Cellphone*/
 @media screen and (max-width: 480px) {
     #navigation {
         padding: 10px;
     }
     
+    #navigation {
+        flex-direction: column;
+    }
+
     #buttons {
         flex-direction: row;
     }
