@@ -173,48 +173,45 @@ section {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .about-content {
+    .profile-about-container {
+        flex-direction: column;
+        gap: 30px; /* Reduced for better spacing */
+        padding: 50px 20px; /* Reduced padding */
+        align-items: center;
         text-align: center;
-        padding: 2px;
     }
-    
+
+    .profile-image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #profileImage {
+        width: 60%;
+        max-width: 250px; /* Limits image size */
+        height: auto;
+        border-radius: 50%; /* Keeps it circular */
+    }
+
+    .about-content {
+        width: 100%;
+        max-width: 90%;
+        text-align: center; /* Centers content */
+    }
+
     .skills {
         border-left: none;
-        padding-left: 0;
         border-bottom: 3px solid #3a86ff;
         padding-bottom: 10px;
     }
-    
+
     .action-buttons {
         justify-content: center;
+        flex-wrap: wrap;
     }
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .profile-about-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .profile-image-container {
-        width: 100%;
-        height: auto;
-    }
-    
-    #profileImage {
-        width: 80%;
-        height: auto;
-        max-height: none;
-        border-radius: 0;
-        border-radius: 50vw; /* Makes it circular on mobile */
-        max-width: 300px;
-    }
-    
-    .about-content {
-        width: 100%;
-    }
-}
 
 
 /*Now styling the descriptive part of the projects section*/
