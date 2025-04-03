@@ -175,8 +175,8 @@ section {
 @media (max-width: 768px) {
     .profile-about-container {
         flex-direction: column;
-        gap: 30px; /* Reduced for better spacing */
-        padding: 50px 20px; /* Reduced padding */
+        gap: 20px; /* Reduced for better spacing */
+        padding: 10px 5px; /* Reduced padding */
         align-items: center;
         text-align: center;
     }
