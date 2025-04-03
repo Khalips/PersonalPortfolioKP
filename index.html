@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Sets the title of the webpage, which appears in the browser tab -->
         <title>Personal Portfolio - Kaliphile Papiyana</title>
-
+    
+        <!-- Specifies the character encoding for the document -->
         <meta charset="UTF-8">
+    
+        <!-- Provides a brief description of the website for search engines and social media -->
         <meta name="description" content="A personal portfolio for Kaliphile Papiyana.">
+    
+        <!-- Defines relevant keywords for search engine optimization (SEO) -->
         <meta name="keywords" content="personal, portfolio, Kaliphile, Papiyana">
+    
+        <!-- Ensures the webpage is responsive on different devices -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+    
+        <!-- Links an external CSS file for styling the webpage -->
         <link rel="stylesheet" href="styles.css">
+    
+        <!-- Links Font Awesome for using icons in the webpage -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    </head>
+    </head>    
 
     <body>
         <header id="home">
             <div id="navigation">
                 <div>
+                    <!--Call the javascript function to scroll to view section when you press the Kaliphile. button-->
                     <button onclick="scrollToSection('home')" id="home_btn">Kaliphile.</button>
                 </div>
                 <div id="buttons">
+                    <!--For each button, when clicked, call a javascript function to change appearance and scroll to view section-->
                     <button onclick="scrollAndActivate('about', this)" class="nav">About</button>
                     <button onclick="scrollAndActivate('education', this)" class="nav">Education</button>
                     <button onclick="scrollAndActivate('projects', this)" class="nav">Projects</button>
@@ -27,11 +40,16 @@
             </div>           
         </header>
 
+        <!--This sections stores the about me content-->
         <section id="about">
+            <!--This div stores both the profile photo and the descriptive contents of the about section-->
             <div class="profile-about-container">
+                <!--This div stores the profile image-->
                 <div class="profile-image-container">
                     <img id="profileImage" src="images/profilePic.jpg" alt="Profile Picture">
                 </div>
+
+                <!--This div stores the about content-->
                 <div class="about-content">
                     <h1 class="greeting">Hi, I'm <span class="name">Kaliphile Papiyana</span></h1>
                     
@@ -43,7 +61,7 @@
                         Over the past two years, I've completed numerous projects, gaining substantial 
                         experience in both Web Development and Electronics Design.
                     </p>
-                    
+                    <!--Stores the buttons with a call to action-->
                     <div class="action-buttons">
                         <a href="#contact" class="btn hire-btn">Hire Me</a>
                         <a href="#projects" class="btn projects-btn">View Projects</a>
@@ -52,6 +70,7 @@
             </div>
         </section>
         
+        <!--This is the section that contains my education information-->
         <section id="education">
             <h2>Education</h2>
             <div class="education-container">
@@ -85,7 +104,9 @@
             </div>
         </section>        
         
+        <!--This is the section that contains information and images about my projects-->
         <section id="projects">
+            <!--This div contains the information that describes my projects-->
             <div class="projects-intro">
                 <h2>My Projects</h2>
                 <p class="projects-subtitle">Showcasing my technical expertise and creative solutions</p>
@@ -110,15 +131,16 @@
                 </div>
             </div>
         
-            <div class="wrapper">
+            <!--This div contains the project images. It will be displayed in the form of an image accordion-->
+            <div class="wrapper">                                                   <!--Contains the whole image accordion-->
                 <div class="containers">
-                    <input checked type="radio" name="slide" id="c1" class="img">
+                    <input checked type="radio" name="slide" id="c1" class="img">   <!--First image-->
                     <label for="c1" class="cards" id="one">
                         <div class="row">
                             <div class="icon">
                                 1
                             </div>
-                            <div class="description">
+                            <div class="description">   <!--Describes the image-->
                                 <h4>
                                     Biology Project
                                 </h4>
@@ -129,13 +151,13 @@
                         </div>
                     </label>
     
-                    <input checked type="radio" name="slide" id="c2" class="img">
+                    <input checked type="radio" name="slide" id="c2" class="img">    <!--Second image-->
                     <label for="c2" class="cards" id="two">
                         <div class="row">
                             <div class="icon">
                                 2
                             </div>
-                            <div class="description">
+                            <div class="description">   <!--Describes the image-->
                                 <h4>
                                     Physics project
                                 </h4>
@@ -146,13 +168,13 @@
                         </div>
                     </label>
     
-                    <input checked type="radio" name="slide" id="c3" class="img">
+                    <input checked type="radio" name="slide" id="c3" class="img">    <!--Third image-->
                     <label for="c3" class="cards" id="three">
                         <div class="row">
                             <div class="icon">
                                 3
                             </div>
-                            <div class="description">
+                            <div class="description">   <!--Describes the image-->
                                 <h4>
                                     Electronics Project
                                 </h4>
@@ -163,13 +185,13 @@
                         </div>
                     </label>
     
-                    <input checked type="radio" name="slide" id="c4" class="img">
+                    <input checked type="radio" name="slide" id="c4" class="img">    <!--Fourth image-->
                     <label for="c4" class="cards" id="four">
                         <div class="row">
                             <div class="icon">
                                 4
                             </div>
-                            <div class="description">
+                            <div class="description">   <!--Describes the image-->
                                 <h4>
                                     Netflix Login Clone
                                 </h4>
@@ -183,12 +205,14 @@
             </div>
         </section>
         
+        <!--This is the contact me section-->
         <section id="contact">
             <!-- Below is the code for the form to contact me-->
             <div class="container">
                 <h2>Let's Talk</h2>
                 <p id="info">If you wish to get more information about me, feel free to send a message</p>
 
+                <!--The form that you fill in to get ahold of me-->
                 <form id="contactForm">
                     <label for="name">Name:</label>
                     <input type="text" id="name" required>
@@ -207,10 +231,11 @@
                 <p id="status"></p>
             </div>
 
-            <!-- The below code is for my contact details -->
+            <!-- The below code is for my contact details. These will be displayed in an annimated glass card -->
             <div id="contact_details">
                 <div class="parent">
                     <div class="card">
+                        <!--These are just decorative circles-->
                         <div class="logo">
                             <span class="circle circle1"></span>
                             <span class="circle circle2"></span>
@@ -230,6 +255,7 @@
                         <div class="bottom">
                             <div class="social-buttons-container">
 
+                                <!--Adding links to my social buttons-->
                                 <button class="social-button social-button1">
                                     <a href="https://www.facebook.com/profile.php?id=61558758694403" target="_blank">
                                         <i class="fab fa-facebook-f"></i> <!-- Facebook -->
@@ -273,19 +299,19 @@
         
                 <!-- Social Media Links -->
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/kaliphile-papiyana-b84985264/" target="_blank">
+                    <a href="https://www.linkedin.com/in/kaliphile-papiyana-b84985264/" target="_blank">     <!--LinkedIn-->
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://github.com/Khalips" target="_blank">
+                    <a href="https://github.com/Khalips" target="_blank">                                    <!--GitHub-->
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.facebook.com/profile.php?id=61558758694403" target="_blank">
+                    <a href="https://www.facebook.com/profile.php?id=61558758694403" target="_blank">        <!--Facebook-->
                         <i class="fab fa-facebook"></i>
                     </a>
-                    <a href="https://www.youtube.com/@khaliphilepapiyana9225" target="_blank">
+                    <a href="https://www.youtube.com/@khaliphilepapiyana9225" target="_blank">               <!--YouTube-->
                         <i class="fab fa-youtube"></i>
                     </a>
-                    <a href="https://wa.me/+27843528401" target="_blank">
+                    <a href="https://wa.me/+27843528401" target="_blank">                                    <!--WhatsApp-->
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
@@ -307,5 +333,6 @@
         </footer>
     </body>
 
+    <!--Linking the Javascript file-->
     <script src="script.js"></script>
 </html>
