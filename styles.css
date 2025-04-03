@@ -198,6 +198,7 @@ h2 {
 }
 
 #info {
+    color: aqua;
     padding-bottom: 10px;
 }
 
@@ -587,6 +588,10 @@ footer div p {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+    }
+
+    .wrapper {
+        width: 80%;
     }
 }
 
