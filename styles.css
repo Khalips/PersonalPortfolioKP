@@ -572,49 +572,16 @@ footer div p {
     }
 }
 
-/* Tablet and larger - switch to row layout */
-@media (min-width: 768px) {
-    #projects {
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+/* Responsive styles */
+@media only screen and (max-width: 1024px) {
+    /* Tablet styles */
+    .wrapper {
+        height: 80vh;
     }
     
-    /* Optional: Adjust expanded card width for tablet */
-    @media (max-width: 1024px) {
-        .img:checked + label {
-            width: 400px;
-        }
-    }
-}
-
-/* Desktop/laptop - full width expanded cards */
-@media (min-width: 1025px) {
-    .img:checked + label {
-        width: 600px;
-    }
-}
-
-/* Mobile adjustments */
-@media (max-width: 767px) {
     .containers {
-        height: 3000px;
-    }
-    
-    .img:checked + label {
-        width: 250px;
-    }
-}
-
-/* Small mobile adjustments */
-@media (max-width: 480px) {
-    #projects {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .containers {
-        height: 200px;
+        width: 90%;
+        height: 250px;
     }
     
     .cards {
@@ -622,6 +589,63 @@ footer div p {
     }
     
     .img:checked + label {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Mobile styles */
+    #projects {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    
+    #projects > div:first-child {
+        order: -1;
+        margin-bottom: 30px;
+    }
+    
+    .wrapper {
+        height: 60vh;
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    .containers {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .cards {
+        width: 60px;
+        margin: 0 5px;
+    }
+    
+    .img:checked + label {
+        width: 300px;
+    }
+    
+    .description {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Small mobile devices */
+    .containers {
+        height: 180px;
+    }
+    
+    .img:checked + label {
         width: 250px;
+    }
+    
+    .icon {
+        margin: 10px;
+        font-size: 14px;
+    }
+    
+    .description {
+        height: 60px;
     }
 }
