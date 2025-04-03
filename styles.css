@@ -57,6 +57,101 @@ section {
     height: 100vh;
 }
 
+/*Now styling the descriptive part of the projects section*/
+#projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Now styling the image accordion in the projects section*/
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containers {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+}
+
+.cards {
+    width: 130px;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 25px;
+    margin: 0px 10px;
+}
+
+.row {
+    color: rgb(7, 26, 235);
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.icon {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    font-size: 13px;
+    opacity: 0;
+}
+
+p {
+    color: rgb(3, 200, 134);
+    padding: 5px;
+}
+
+h4 {
+    text-transform: uppercase;
+}
+
+.img {
+    display: none;
+}
+
+.img:checked + label {
+    width: 600px;
+}
+
+.img:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+#one {
+    background-image: url("images/microscopy.jpg");
+}
+
+#two {
+    background-image: url("images/x-ray.jpg");
+}
+
+#three {
+    background-image: url("images/vibration_sensor.jpg");
+}
+
+#four {
+    background-image: url("images/netflixClone.jpg");
+}
+
 /*Now styling the contact section*/
 
 #contact {
@@ -414,6 +509,12 @@ footer div p {
         padding-left: 0;
         padding-top: 10px;
     }
+
+    #projects {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 
 /*For Tablet*/
@@ -448,6 +549,12 @@ footer div p {
     .contact-info {
         flex-direction: column;
     }
+
+    #projects {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 
 /*For Cellphone*/
@@ -473,6 +580,13 @@ footer div p {
         flex-direction: column;
         align-items: center;
         padding: 0;
+    }
+
+    #projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
 }
 
