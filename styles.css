@@ -213,6 +213,71 @@ section {
 }
 
 
+/* Now styling the Education Section*/
+#education {
+    padding: 80px 20px;
+    text-align: center;
+    background: rgb(2, 176, 199);
+}
+
+.education-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.education-entry {
+    background: rgb(127, 245, 247);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.education-entry:hover {
+    transform: translateY(-5px);
+}
+
+.education-entry h3 {
+    font-size: 1.5rem;
+    color: #010915;
+    margin-bottom: 5px;
+}
+
+.university {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.years {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.courses {
+    list-style: none;
+    padding: 0;
+}
+
+.courses li {
+    font-size: 1rem;
+    padding: 5px 0;
+    color: #444;
+}
+
+@media (max-width: 768px) {
+    .education-container {
+        text-align: center;
+    }
+
+    .education-entry {
+        padding: 15px;
+    }
+}
+
 
 /*Now styling the descriptive part of the projects section*/
 #projects {
