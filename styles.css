@@ -74,8 +74,8 @@ section {
 }
 
 .containers {
-    width: 500px;
-    height: 300px;
+    width: 35vw;
+    height: 45vh;
     display: flex;
     justify-content: start;
     flex-wrap: nowrap;
@@ -579,7 +579,8 @@ footer div p {
     }
 
     .wrapper {
-        width: 80%;
+        width: 60%;
+        margin-left: 10px;
     }
 }
 
