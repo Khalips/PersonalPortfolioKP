@@ -175,7 +175,7 @@ section {
 @media (max-width: 768px) {
     .profile-about-container {
         flex-direction: column;
-        gap: 20px; /* Reduced for better spacing */
+        gap: 2px; /* Reduced for better spacing */
         padding: 10px 5px; /* Reduced padding */
         align-items: center;
         text-align: center;
@@ -196,7 +196,7 @@ section {
 
     .about-content {
         width: 100%;
-        max-width: 90%;
+        max-width: 120%;
         text-align: center; /* Centers content */
     }
 
