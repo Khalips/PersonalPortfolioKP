@@ -175,7 +175,7 @@ section {
 @media (max-width: 768px) {
     .about-content {
         text-align: center;
-        padding: 20px;
+        padding: 2px;
     }
     
     .skills {
@@ -183,7 +183,6 @@ section {
         padding-left: 0;
         border-bottom: 3px solid #3a86ff;
         padding-bottom: 10px;
-        display: inline-block;
     }
     
     .action-buttons {
@@ -209,12 +208,11 @@ section {
         max-height: none;
         border-radius: 0;
         border-radius: 50vw; /* Makes it circular on mobile */
-        max-width: 250px;
+        max-width: 300px;
     }
     
     .about-content {
         width: 100%;
-        text-align: center;
     }
 }
 
