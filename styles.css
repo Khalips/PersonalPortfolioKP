@@ -570,17 +570,53 @@ footer div p {
         align-items: center;
         padding: 0;
     }
+}
 
+/* Tablet and larger - switch to row layout */
+@media (min-width: 768px) {
     #projects {
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
         align-items: center;
     }
-
-    .wrapper {
-        width: 100%;
-        margin-left: 10px;
+    
+    /* Optional: Adjust expanded card width for tablet */
+    @media (max-width: 1024px) {
+        .img:checked + label {
+            width: 400px;
+        }
     }
 }
 
+/* Desktop/laptop - full width expanded cards */
+@media (min-width: 1025px) {
+    .img:checked + label {
+        width: 600px;
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+    .containers {
+        height: 250px;
+    }
+    
+    .img:checked + label {
+        width: 300px;
+    }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+    .containers {
+        height: 200px;
+    }
+    
+    .cards {
+        width: 80px;
+    }
+    
+    .img:checked + label {
+        width: 250px;
+    }
+}
