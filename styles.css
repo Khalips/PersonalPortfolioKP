@@ -6,7 +6,7 @@
 
 body {
     padding-top: 120px;
-    background-color: rgb(139, 229, 229);
+    background-color: rgb(19, 173, 173);
 }
 
 #navigation {
@@ -56,6 +56,166 @@ body {
 section {
     height: 100vh;
 }
+
+
+/* Now styling the profile image*/
+
+/* Container for profile and about sections */
+.profile-about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 200px;
+    max-width: 100%;
+    padding: 150px;
+}
+
+/* Profile image container */
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+}
+
+/* Your preferred image styling - now responsive */
+#profileImage {
+    width: auto;
+    height: 100%;
+    max-height: 400px;
+    border-radius: 150px; /* Creates the rounded effect */
+    border: 3px solid #4b0bb9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+
+/* About Section Styling */
+.about-content {
+    padding: 30px;
+    max-width: 1000px;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.greeting {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    color: #080808;
+}
+
+.name {
+    color: #3a86ff;
+    background: linear-gradient(90deg, #2266d3, #8338ec);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline;
+}
+
+.skills {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-weight: 500;
+    color: #2f2e2e;
+    margin-bottom: 25px;
+    border-left: 4px solid #3a86ff;
+    padding-left: 15px;
+}
+
+.bio {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #302e2e;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.hire-btn {
+    background: linear-gradient(135deg, #3a86ff, #8338ec);
+    color: white;
+    box-shadow: 0 4px 15px rgba(58, 134, 255, 0.3);
+}
+
+.projects-btn {
+    background: white;
+    color: #3a86ff;
+    border: 2px solid #3a86ff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(58, 134, 255, 0.4);
+}
+
+.projects-btn:hover {
+    background: #f8f9fa;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about-content {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .skills {
+        border-left: none;
+        padding-left: 0;
+        border-bottom: 3px solid #3a86ff;
+        padding-bottom: 10px;
+        display: inline-block;
+    }
+    
+    .action-buttons {
+        justify-content: center;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .profile-about-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .profile-image-container {
+        width: 100%;
+        height: auto;
+    }
+    
+    #profileImage {
+        width: 80%;
+        height: auto;
+        max-height: none;
+        border-radius: 0;
+        border-radius: 50vw; /* Makes it circular on mobile */
+        max-width: 250px;
+    }
+    
+    .about-content {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 
 /*Now styling the descriptive part of the projects section*/
 #projects {
@@ -420,7 +580,7 @@ h2 {
 /* Now styling the Footer section */
 
 .footer-content {
-    background-color: #008489;
+    background-color: #01393b;
     padding: 20px;
     color: white;
     text-align: center;
